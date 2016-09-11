@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Colors</title>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<style type="text/css">
 		div {
 			width: 200px;
@@ -10,53 +11,106 @@
 
 		div span {
 			text-align: center;
-			display: block;
+			display: 	block;
 			padding-top: 15px;
 		}
 		
-		#c1 { background-color: #add4ed; }
-		#c2 { background-color: #b9a0a0; }
-		#c3 { background-color: #87ceeb; }
-		#c4 { background-color: #8bc735; }
-		#c5 { background-color: #9CC3F7; }
-		#c6 { background-color: #fab371; }
-		#c7 { background-color: #EC691E; }
-		#c8 { background-color: #D56011; }
-		#c9 { background-color: #0ebfe9; }
-		#c10 {background-color: #304878; }
-		#c11 {background-color: #6a943f; }
-		#c12 {background-color: #93b874; }
-		#c13 {background-color: #800080; }
-		#c14 {background-color: #fffbd7; }
-		#c15 {background-color: #0095ff; }
-		#c16 {background-color: #def1ff; }
-		#c17 {background-color: #8db262; }
-		#c18 {background-color: #febd4c; }
-		#c19 {background-color: #e30b0d; }
-		#c20 {background-color: #e6ffe6; }
+		div#col1 {
+			height: 500px;
+			width: 425px;
+			float: left;
+		}
+
+		div#col2 {
+			height: 500px;
+			width: 425px;
+			float: left;
+		}
+
+		div#col2 div {
+			float: left;
+			margin: 1px;
+		}
+
+		div#col1 div {
+			float: left;
+			margin: 1px;
+		}
+
+		div#colors {
+			width: 850px;
+		}
+
+		#c1  {background-color: #add4ed; }#b1  {background-color: #dff0d8; } 
+		#c2  {background-color: #b9a0a0; }#b2  {background-color: #ababab; }
+		#c3  {background-color: #87ceeb; }#b3  {background-color: #ababab; }
+		#c4  {background-color: #8bc735; }#b4  {background-color: #ababab; }
+		#c5  {background-color: #9CC3F7; }#b5  {background-color: #ababab; }
+		#c6  {background-color: #fab371; }#b6  {background-color: #ababab; }
+		#c7  {background-color: #EC691E; }#b7  {background-color: #ababab; }
+		#c8  {background-color: #D56011; }#b8  {background-color: #ababab; }
+		#c9  {background-color: #0ebfe9; }#b9  {background-color: #ababab; }
+		#c10 {background-color: #304878; }#b10 {background-color: #ababab; }
+		#c11 {background-color: #6a943f; }#b11 {background-color: #ababab; }
+		#c12 {background-color: #93b874; }#b12 {background-color: #ababab; }
+		#c13 {background-color: #800080; }#b13 {background-color: #ababab; }
+		#c14 {background-color: #fffbd7; }#b14 {background-color: #ababab; }
+		#c15 {background-color: #0095ff; }#b15 {background-color: #ababab; }
+		#c16 {background-color: #def1ff; }#b16 {background-color: #ababab; }
+		#c17 {background-color: #8db262; }#b17 {background-color: #ababab; }
+		#c18 {background-color: #febd4c; }#b18 {background-color: #ababab; }
+		#c19 {background-color: #e30b0d; }#b19 {background-color: #ababab; }
+		#c20 {background-color: #e6ffe6; }#b20 {background-color: #ababab; }
+
 	</style>
 </head>
 <body>
-	<div id="c1"><span> #add4ed </span></div>
-	<div id="c2"><span> #b9a0a0 </span></div>
-	<div id="c3"><span> #87ceeb </span></div>
-	<div id="c4"><span> #8bc735 </span></div>
-	<div id="c5"><span> #9CC3F7 </span></div>
-	<div id="c6"><span> #fab371 </span></div>
-	<div id="c7"><span> #EC691E </span></div>
-	<div id="c8"><span> #D56011 </span></div>
-	<div id="c9"><span> #0ebfe9 </span></div>
-	<div id="c10"><span> #304878 </span></div>
-	<div id="c11"><span> #6a943f </span></div>
-	<div id="c12"><span> #93b874 </span></div>
-	<div id="c13"><span> #800080 </span></div>
-	<div id="c14"><span> #fffbd7 </span></div>
-	<div id="c15"><span> #0095ff </span></div>
-	<div id="c16"><span> #def1ff </span></div>
-	<div id="c17"><span> #8db262 </span></div>
-	<div id="c18"><span> #febd4c </span></div>
-	<div id="c19"><span> #e30b0d </span></div>
-	<div id="c20"><span> #e6ffe6 </span></div>
+<div id="colors">
+	<div id="col1"> 
+		<div id="c1"><span> #add4ed </span></div>
+		<div id="c2"><span> #b9a0a0 </span></div>
+		<div id="c3"><span> #87ceeb </span></div>
+		<div id="c4"><span> #8bc735 </span></div>
+		<div id="c5"><span> #9CC3F7 </span></div>
+		<div id="c6"><span> #fab371 </span></div>
+		<div id="c7"><span> #EC691E </span></div>
+		<div id="c8"><span> #D56011 </span></div>
+		<div id="c9"><span> #0ebfe9 </span></div>
+		<div id="c10"><span> #304878 </span></div>
+		<div id="c11"><span> #6a943f </span></div>
+		<div id="c12"><span> #93b874 </span></div>
+		<div id="c13"><span> #800080 </span></div>
+		<div id="c14"><span> #fffbd7 </span></div>
+		<div id="c15"><span> #0095ff </span></div>
+		<div id="c16"><span> #def1ff </span></div>
+		<div id="c17"><span> #8db262 </span></div>
+		<div id="c18"><span> #febd4c </span></div>
+		<div id="c19"><span> #e30b0d </span></div>
+		<div id="c20"><span> #e6ffe6 </span></div>
+	</div>
 
+	<div id="col2"> 
+		<div id="b1"><span>  #dff0d8 </span></div>
+		<div id="b2"><span>  #ababab </span></div>
+		<div id="b3"><span>  #ababab </span></div>
+		<div id="b4"><span>  #ababab </span></div>
+		<div id="b5"><span>  #ababab </span></div>
+		<div id="b6"><span>  #ababab </span></div>
+		<div id="b7"><span>  #ababab </span></div>
+		<div id="b8"><span>  #ababab </span></div>
+		<div id="b9"><span>  #ababab </span></div>
+		<div id="b10"><span> #ababab </span></div>
+		<div id="b11"><span> #ababab </span></div>
+		<div id="b12"><span> #ababab </span></div>
+		<div id="b13"><span> #ababab </span></div>
+		<div id="b14"><span> #ababab </span></div>
+		<div id="b15"><span> #ababab </span></div>
+		<div id="b16"><span> #ababab </span></div>
+		<div id="b17"><span> #ababab </span></div>
+		<div id="b18"><span> #ababab </span></div>
+		<div id="b19"><span> #ababab </span></div>
+		<div id="b20"><span> #ababab </span></div>
+	</div>
+</div>
 </body>
 </html>
